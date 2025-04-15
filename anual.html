@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pagamento via Pix</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #fff8f4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      padding: 20px;
+    }
+
+    img {
+      max-width: 300px;
+      width: 80%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    ol {
+  font-size: 18px;
+  color: #444;
+  max-width: 600px;
+  text-align: left;
+  margin-left: 10px;
+}
+
+button {
+  background-color: #D4A95C;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  margin: 10px 8px;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #E6C27A;
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Substitua o src pela imagem do QR Code real -->
+  <img src="assets/QRcode-Anual.jpg" alt="QR Code para pagamento via Pix">
+    <h1>Pagamento via Pix <br>R$700,00</h1>
+    <p>Destinatário: <b>Fabiano da Costa dos Santos</b></p>
+    <h4>Para efetuar o pagamento da sua PetBox do amor, utilize o QR Code acima e após o pagamento, siga os passos abaixo:</h4>
+  <ol>
+    <li>Ao efetuar o pagamento, encaminhar o comprovante para o WhatsApp;</li>
+    <li>Em seguida, aguardar a comprovação de pagamento.</li>
+    <li>Aguardar sua PetBox do amor ser preparada e enviada no conforto de sua casa. 🐾</li>
+  </ol>
+
+  <div class="botoes">
+    <button onclick="window.location.href='index.html'">Voltar para a Home</button>
+    <button onclick="window.location.href='https://wa.me/5512991403657'">Enviar comprovante no WhatsApp</button>
+  </div>
+</body>
+</html>

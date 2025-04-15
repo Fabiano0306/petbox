@@ -15,7 +15,8 @@
   </header>
 
   <section class="hero">
-    <p>Seu Pet merece surpresas incríveis cheias de amor, brinquedos e petiscos saudáveis.</p>
+    <p>Seu Pet merece surpresas incríveis cheias de amor, brinquedos, brindes e petiscos saudáveis.</p>
+    <p>Torne a vida do seu Pet ainda mais divertida, ele merece. 🐾</p>
     <button onclick="scrollToPlans()">Quero Assinar Agora 🐾</button>
   </section>
 
@@ -27,12 +28,16 @@
         <p>Mensal, trimestral ou anual com <b>descontos</b> especiais.</p>
       </div>
       <div class="card">
-        <h3>2. Personalizamos a Box</h3>
-        <p>Brinquedos e petiscos de acordo com o porte e gosto do seu pet.</p>
+        <h3>2. O que vem na box?</h3>
+        <p>Brinquedos, brindes e petiscos de acordo com o porte e gosto do seu pet.</p>
       </div>
       <div class="card">
-        <h3>3. Receba em Casa</h3>
-        <p>Fácil, rápido e cheio de amor. Entregamos para: <b>Taubaté, Pinda e Tremembé.</b></p>
+        <h3>3. Personalizamos a Box</h3>
+        <p>Preparamos ela com amor, em todos os detalhes, desde a montagem, até a finalização.</p>
+      </div>
+      <div class="card">
+        <h3>4. Receba em Casa</h3>
+        <p>Fácil, rápido e cheio de amor. Entregamos em: <b>Taubaté, Pinda e Tremembé.</b></p>
       </div>
     </div>
   </section>
@@ -42,49 +47,80 @@
     <div class="cards">
       <div class="card">
         <h3>Mensal</h3>
-        <p>R$59,90/mês</p>
-        <p>Crédito | Pix</p>
-        <button onclick="window.open('https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2c938084962feb840196370a0ad90345', '_blank')">Assinar 🐾</button>
+        <p><b>R$99,90</b>/mês</p>
+        <p>Crédito | Pix | Até 2x Sem Juros</p>
+        <button onclick="window.open('https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2c938084962feb840196370a0ad90345', '_blank')">Crédito 🐾</button>
+        <button onclick="window.location.href='pix.html'">Pix 🐾</button>
       </div>
       <div class="card">
         <h3>Trimestral</h3>
-        <p>R$165,00 (R$55/mês)</p>
-        <p>Crédito | Pix</p>
-        <button onclick="window.open('https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2c938084962feb840196370ead4c034a', '_blank')">Assinar 🐾</button>
+        <p><b>R$239,90</b> (R$79,96/mês)</p>
+        <p>Crédito | Pix | Até 3x Sem Juros</p>
+        <button onclick="window.open('https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2c938084962feb840196370ead4c034a', '_blank')">Crédito 🐾</button>
+        <button onclick="window.location.href='trimestral.html'">Pix 🐾</button>
+      </div>
+      <div class="card">
+        <h3>Semestral</h3>
+        <p><b>R$420,00</b> (R$70,00/mês)</p>
+        <p>Crédito | Pix | Até 4x Sem Juros</p>
+        <button onclick="window.open('https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2c938084963a37ec01963b3c18950090', '_blank')">Crédito 🐾</button>
+        <button onclick="window.location.href='semestral.html'">Pix 🐾</button>
       </div>
       <div class="card">
         <h3>Anual</h3>
-        <p>R$600,00 (R$50/mês)</p>
-        <p>Crédito | Pix</p>
-        <button onclick="window.open('https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2c938084963245b70196370fbf4c02c0', '_blank')">Assinar 🐾</button>
+        <p><b>R$700,00</b> (R$58,33/mês)</p>
+        <p>Crédito | Pix | Até 6x Sem Juros</p>
+        <button onclick="window.open('https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2c938084963245b70196370fbf4c02c0', '_blank')">Crédito 🐾</button>
+        <button onclick="window.location.href='anual.html'">Pix 🐾</button>
       </div>
     </div>
   </section>
 
   <section class="section fade-in" id="formulario">
-    <h2>Fale com a Gente</h2>
+    <h2>Formulário de adesão | Pagamento Confirmado</h2>
     <form action="https://formsubmit.co/fabianoeurospace@gmail.com" method="POST" class="form-box">
       <input type="hidden" name="_captcha" value="false">
       <input type="text" name="nome_tutor" placeholder="Seu nome" required>
-      <input type="text" name="nome_pet" placeholder="Nome do pet" required>
+      <input type="text" name="nome_pet" placeholder="Nome do seu pet" required>
       <select name="porte_pet" required>
-        <option value="">Porte do pet</option>
+        <option value="">Porte do Pet</option>
         <option value="pequeno">Pequeno</option>
         <option value="medio">Médio</option>
         <option value="grande">Grande</option>
       </select>
-      <input type="email" name="email" placeholder="Seu e-mail" required>
+      <select name="alergia_pet" id="alergia-select" required>
+        <option value="">O Pet possui alguma alergia? (Sabor de petiscos e/ou marcas)</option>
+        <option value="sim-qual">Sim</option>
+        <option value="nao">Não</option>
+      </select>
+      <input type="text" name="qual_alergia" id="alergia-texto" placeholder="Descreva a alergia" style="display: none; margin-top: 10px;">      
+      <input type="email" name="email" placeholder="Seu e-mail" equired>
+      <input type="email" name="email" placeholder="Endereço completo: Ex: Av. Petlovers, 123" equired>
       <input type="tel" name="whatsapp" placeholder="WhatsApp: (xx)xxxxx-xxxx" required>
-      <textarea name="mensagem" rows="4" placeholder="Escreva aqui os gostos favoritos (brinquedos e petiscos) do seu Pet para podermos preparar sua PetBox do Amor 🐾..."></textarea>
+      <textarea name="mensagem" rows="4" placeholder="Escreva aqui um pouco sobre seu Pet! Sua história, como se tornaram melhores Aumigos? O que ele gosta de brincar? Para podermos preparar sua PetBox do Amor 🐾"></textarea>
       <button type="submit">Enviar 🐾</button>
     </form>
   </section>
 
   <footer>
-    <p>Fale com a gente pelo <a href="https://wa.me/5512991403657" target="_blank" style="text-decoration: none; color: inherit;"><b>WhatsApp!</b></a></p>
-    <p>Siga no Instagram: <a href="https://www.instagram.com/petbox_do_amor?igsh=MTAyaGwxMnB6cjAzag%3D%3D&utm_source=qr" target="_blank" style="text-decoration: none; color: inherit;"><b>@petbox_do_amor</b></a></p>
+    <p>Alguma dúvida? Fale com a gente pelo <a href="https://wa.me/5512991403657" target="_blank" style="text-decoration: none; color: inherit;"><b>WhatsApp!</b></a></p>
+    <p>Nos siga no Instagram: <a href="https://www.instagram.com/petbox_do_amor?igsh=MTAyaGwxMnB6cjAzag%3D%3D&utm_source=qr" target="_blank" style="text-decoration: none; color: inherit;"><b>@petbox_do_amor</b></a></p>
   </footer>
 
   <script src="script.js"></script>
+  <script>
+    const selectAlergia = document.getElementById('alergia-select');
+    const campoTexto = document.getElementById('alergia-texto');
+  
+    selectAlergia.addEventListener('change', function () {
+      if (selectAlergia.value === 'sim-qual') {
+        campoTexto.style.display = 'block';
+      } else {
+        campoTexto.style.display = 'none';
+        campoTexto.value = ''; // limpa o campo se for escondido
+      }
+    });
+  </script>
+  
 </body>
 </html>

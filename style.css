@@ -134,3 +134,27 @@ footer {
 .form-box button:hover {
   background-color: #E6C27A;
 }
+
+.botoes {
+  display: flex;
+  gap: 16px; /* espaçamento entre os botões */
+  flex-wrap: wrap; /* para adaptar no mobile */
+  justify-content: center; /* centraliza os botões na tela */
+  margin-top: 20px;
+}
+.botoes button {
+  background-color: #D4A95C;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.botoes button:hover {
+  background-color: #E6C27A;
+}
+.botoes button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
