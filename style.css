@@ -158,3 +158,27 @@ footer {
   background-color: #ccc;
   cursor: not-allowed;
 }
+
+.tag-recomendado {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: #D4A95C;
+  color: white;
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-radius: 5px;
+  animation: piscar 1s infinite alternate;
+  box-shadow: 0 0 8px #E6C27A;
+}
+
+@keyframes piscar {
+  from { opacity: 1; }
+  to { opacity: 1; }
+}
+
+.card.recomendado {
+  position: relative;
+  border: 2px solid #D4A95C;
+}

@@ -25,7 +25,7 @@
     <div class="cards">
       <div class="card">
         <h3>1. Escolha o Plano</h3>
-        <p>Mensal, trimestral ou anual com <b>descontos</b> especiais.</p>
+        <p>Mensal, trimestral, semestral ou anual com <b>descontos</b> especiais.</p>
       </div>
       <div class="card">
         <h3>2. O que vem na box?</h3>
@@ -37,7 +37,7 @@
       </div>
       <div class="card">
         <h3>4. Receba em Casa</h3>
-        <p>Fácil, rápido e cheio de amor. Entregamos em: <b>Taubaté, Pinda e Tremembé.</b></p>
+        <p>Fácil, rápido e cheio de amor. Entregamos em: <b>Taubaté, Pinda e Tremembé.</b> Consulte a taxa.</p>
       </div>
     </div>
   </section>
@@ -63,7 +63,8 @@
         <p>Pix | QrCode</p>
         <button onclick="window.location.href='semestral.html'">Assinar 🐾</button>
       </div>
-      <div class="card">
+      <div class="card recomendado">
+        <div class="tag-recomendado">RECOMENDADO</div>
         <h3>Anual</h3>
         <p><b>R$700,00</b> (R$58,33/mês)</p>
         <p>Pix | QrCode</p>
@@ -84,14 +85,22 @@
         <option value="medio">Médio</option>
         <option value="grande">Grande</option>
       </select>
+      <select name="qual_pet" id="qual-select" required>
+        <option value="">Qual seria seu Pet?</option>
+        <option value="nao">Cachorro</option>
+        <option value="nao">Gato</option>
+        <option value="sim-qual">Outro</option>
+      </select>
+      <input type="text" name="qual_outro_pet" id="outro-pet-texto" placeholder="Qual seria o seu pet?" style="display: none; margin-top: 10px;">
+
       <select name="alergia_pet" id="alergia-select" required>
         <option value="">O Pet possui alguma alergia? (Sabor de petiscos e/ou marcas)</option>
         <option value="sim-qual">Sim</option>
         <option value="nao">Não</option>
       </select>
-      <input type="text" name="qual_alergia" id="alergia-texto" placeholder="Descreva a alergia" style="display: none; margin-top: 10px;">      
+      <input type="text" name="qual_alergia" id="alergia-texto" placeholder="Descreva a alergia:" style="display: none; margin-top: 10px;">      
       <input type="email" name="email" placeholder="Seu e-mail" equired>
-      <input type="text" name="endereco" placeholder="Endereço completo: Ex: Av. Petlovers, 123" equired>
+      <input type="text" name="endereco" placeholder="Endereço completo: Ex: Rua PetLovers, 123 - Tangamandápio" equired>
       <input type="tel" name="whatsapp" placeholder="WhatsApp: (xx)xxxxx-xxxx" required>
       <textarea name="mensagem" rows="4" placeholder="Escreva aqui um pouco sobre seu Pet! Sua história, como se tornaram melhores Aumigos? O que ele gosta de brincar? Para podermos preparar sua PetBox do Amor 🐾"></textarea>
       <button type="submit">Enviar 🐾</button>
@@ -117,6 +126,21 @@
       }
     });
   </script>
+
+<script>
+  const selectPet = document.getElementById('qual-select');
+  const outroPetTexto = document.getElementById('outro-pet-texto');
+
+  selectPet.addEventListener('change', function () {
+    if (selectPet.value === 'sim-qual') {
+      outroPetTexto.style.display = 'block';
+    } else {
+      outroPetTexto.style.display = 'none';
+      outroPetTexto.value = '';
+    }
+  });
+</script>
+
   
 </body>
 </html>
