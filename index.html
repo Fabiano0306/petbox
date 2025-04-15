@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PetBox do Amor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>PetBox do Amor</h1>
+    <p>Carinho personalizado para o seu pet, todo mês!</p>
+  </header>
+
+  <section class="hero">
+    <p>Seu Pet merece surpresas incríveis cheias de amor, brinquedos e petiscos saudáveis.</p>
+    <button onclick="scrollToPlans()">Quero Assinar Agora 🐾</button>
+  </section>
+
+  <section class="section fade-in">
+    <h2>Como Funciona?</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>1. Escolha o Plano</h3>
+        <p>Mensal, trimestral ou anual com <b>descontos</b> especiais.</p>
+      </div>
+      <div class="card">
+        <h3>2. Personalizamos a Box</h3>
+        <p>Brinquedos e petiscos de acordo com o porte e gosto do seu pet.</p>
+      </div>
+      <div class="card">
+        <h3>3. Receba em Casa</h3>
+        <p>Fácil, rápido e cheio de amor. Entregamos para: <b>Taubaté, Pinda e Tremembé.</b></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section fade-in" id="planos">
+    <h2>Planos</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Mensal</h3>
+        <p>R$59,90/mês</p>
+        <p>Crédito Recorrente</p>
+        <button onclick="window.open('https://pagamento-link-mensal', '_blank')">Assinar 🐾</button>
+      </div>
+      <div class="card">
+        <h3>Trimestral</h3>
+        <p>R$165,00 (R$55/mês)</p>
+        <p>Crédito Recorrente</p>
+        <button onclick="window.open('https://pagamento-link-trimestral', '_blank')">Assinar 🐾</button>
+      </div>
+      <div class="card">
+        <h3>Anual</h3>
+        <p>R$600,00 (R$50/mês)</p>
+        <p>Crédito Recorrente</p>
+        <button onclick="window.open('https://pagamento-link-anual', '_blank')">Assinar 🐾</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section fade-in" id="formulario">
+    <h2>Fale com a Gente</h2>
+    <form action="https://formsubmit.co/seuemail@exemplo.com" method="POST" class="form-box">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="text" name="nome_tutor" placeholder="Seu nome" required>
+      <input type="text" name="nome_pet" placeholder="Nome do pet" required>
+      <select name="porte_pet" required>
+        <option value="">Porte do pet</option>
+        <option value="pequeno">Pequeno</option>
+        <option value="medio">Médio</option>
+        <option value="grande">Grande</option>
+      </select>
+      <input type="email" name="email" placeholder="Seu e-mail" required>
+      <input type="tel" name="whatsapp" placeholder="WhatsApp: (xx)xxxxx-xxxx" required>
+      <textarea name="mensagem" rows="4" placeholder="Escreva aqui os gostos favoritos (brinquedos e petiscos) do seu Pet para podermos preparar sua PetBox do Amor..."></textarea>
+      <button type="submit">Enviar 🐾</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>Fale com a gente pelo <a href="https://wa.me/5547991906158" target="_blank" style="text-decoration: none; color: inherit;"><b>WhatsApp!</b></a></p>
+    <p>Siga no Instagram: @petboxdoamor</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

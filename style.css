@@ -1,0 +1,136 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+body {
+  background: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+header {
+  background-image: url('assets/petbox_img.png');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5em;
+}
+.hero {
+  padding: 30px 20px;
+  text-align: center;
+}
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+.hero button {
+  background: #D4A95C;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.hero button:hover {
+  background: #E6C27A;
+}
+.section {
+  padding: 50px 20px;
+  text-align: center;
+}
+.section h2 {
+  margin-bottom: 30px;
+  color: #D4A95C;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.card {
+  background: #fdfdfd;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 20px;
+  width: 280px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-10px);
+}
+.card h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+.card p {
+  margin-bottom: 15px;
+  color: #555;
+}
+.card button {
+  background: #D4A95C;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+footer {
+  background: #f0f0f0;
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 0.9em;
+}
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out;
+}
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.form-box {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.form-box input,
+.form-box select,
+.form-box textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+  width: 100%;
+}
+.form-box button {
+  background-color: #D4A95C;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.form-box button:hover {
+  background-color: #E6C27A;
+}
